@@ -12,8 +12,8 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="container bg-white">
-      <Header logoImg="./public/logo.svg" menuIcon="./public/menu-icon.svg" />
-      <Hero fotoImg="./public/foto.png" />
+      <Header logoImg="/logo.svg" menuIcon="/menu-icon.svg" />
+      <Hero fotoImg="/foto.png" />
     </div>
   );
 }
