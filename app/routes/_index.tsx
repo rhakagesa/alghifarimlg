@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
-import Header from "~/components/Header";
 import Hero from "~/components/Hero";
+import SeputarMasjid from "~/components/SeputarMasjid";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,9 +11,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="container bg-white">
-      <Header logoImg="/logo.svg" menuIcon="/menu-icon.svg" />
+    <div>
       <Hero fotoImg="/foto.png" />
+      <SeputarMasjid />
     </div>
   );
 }

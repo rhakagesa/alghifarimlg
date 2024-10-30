@@ -36,8 +36,8 @@ export default function Hero({ fotoImg }: HeroProps) {
         />
       </div>
 
-      <div className="flex mx-52 my-10 py-5 rounded-[60px] border bg-slate-400 items-center justify-center max-xl:mx-14 max-xl:py-3 max-lg:flex-col max-lg:mx-36 max-lg:text-center max-lg:rounded-3xl max-md:mx-16 max-md:py-2">
-        <p className="text-xl text-white font-medium max-xl:text-lg max-lg:text-md max-md:text-sm">
+      <div className="flex mx-52 my-10 py-5 rounded-[60px] border-2 bg-slate-400 items-center justify-center max-xl:mx-14 max-xl:py-3 max-lg:flex-col max-lg:mx-36 max-lg:text-center max-lg:rounded-3xl max-md:mx-16 max-md:py-2">
+        <p className="text-xl text-white font-semibold max-xl:text-lg max-lg:text-md max-md:text-sm">
           Mari investasi akhirat dengan cara donasi untuk program kegiatan
           masjid
         </p>
