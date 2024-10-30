@@ -10,7 +10,7 @@ export default function Header({ logoImg, menuIcon }: HeaderProps) {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="flex bg-white w-screen h-[82px] justify-between items-center shadow-sm shadow-black px-4 fixed z-10">
+    <header className="flex bg-white w-screen h-[82px] justify-between items-center shadow-md shadow-slate-400 px-4 fixed z-10">
       <img src={logoImg} alt="logo" className="w-36" />
       <button
         onClick={() => setActive(!active)}
@@ -56,7 +56,7 @@ function NavUl({ active }: { active: boolean }) {
         <li className={fontSize}>
           <Link to="#">Jadwal Kajian</Link>
         </li>
-        <li className="px-8 py-3 text-xl border rounded-[60px] bg-[#357BA2] text-white font-bold">
+        <li className="px-8 py-3 text-xl rounded-[60px] bg-[#357BA2] text-white font-bold">
           <Link to="#">Donasi</Link>
         </li>
       </ul>
