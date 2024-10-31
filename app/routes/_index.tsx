@@ -11,9 +11,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <>
       <Hero fotoImg="/foto.png" />
       <SeputarMasjid />
-    </div>
+    </>
   );
 }

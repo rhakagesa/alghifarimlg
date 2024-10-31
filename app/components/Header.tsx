@@ -10,7 +10,7 @@ export default function Header({ logoImg, menuIcon }: HeaderProps) {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="flex bg-white w-screen h-[82px] justify-between items-center shadow-md shadow-slate-400 px-4 fixed z-10">
+    <header className="flex bg-white w-screen h-[82px] justify-between items-center shadow-md shadow-slate-400 px-4 fixed z-50">
       <img src={logoImg} alt="logo" className="w-36" />
       <button
         onClick={() => setActive(!active)}
