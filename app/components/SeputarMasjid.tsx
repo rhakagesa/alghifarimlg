@@ -3,7 +3,7 @@ import { Link } from "@remix-run/react";
 export default function SeputarMasjid() {
   return (
     <section className="w-screen h-[558px] bg-[url('/vector.svg')] bg-no-repeat bg-[length:578px_443px] bg-right-top mt-5 max-md:h-min">
-      <div className="flex w-full h-min px-44 pt-32 items-center max-xl:px-24 max-md:px-16 max-md:flex-col max-md:text-center">
+      <div className="flex w-full h-min px-44 pt-32 items-center max-xl:px-24 max-md:px-14 max-md:flex-col max-md:text-center">
         <div className="relative w-2/5 h-[300px] max-md:w-full">
           <div className="absolute z-10 -top-[82px] left-[85px] bg-[url('/seputar-masjid-img.svg')] bg-cover w-[311px] h-[396px] max-lg:w-[211px] max-lg:h-[296px] rounded-br-[80px] rounded-tl-[80px] shadow-2xl shadow-black"></div>
           <div className="absolute bg-gradient-to-b from-[#247EB1] to-[#21536F] bg-cover w-[311px] h-[396px] max-lg:w-[211px] max-lg:h-[296px] rounded-br-[80px] rounded-tl-[80px]"></div>

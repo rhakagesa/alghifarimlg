@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import Hero from "~/components/Hero";
+import Informasi from "~/components/Informasi";
 import SeputarMasjid from "~/components/SeputarMasjid";
 
 export const meta: MetaFunction = () => {
@@ -14,6 +15,7 @@ export default function Index() {
     <>
       <Hero fotoImg="/foto.png" />
       <SeputarMasjid />
+      <Informasi />
     </>
   );
 }
