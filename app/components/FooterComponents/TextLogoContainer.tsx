@@ -10,8 +10,8 @@ export default function TextLogoContainer({
   text,
 }: TextLogoContainerProps) {
   return (
-    <div className="w-[40%] max-md:w-full max-md:flex max-md:flex-col max-md:items-center">
-      <h1 className="text-3xl text-white font-semibold mb-4 max-xl:text-xl">
+    <div className="w-full max-md:w-full max-md:flex max-md:flex-col max-md:items-center">
+      <h1 className="text-2xl text-white font-semibold mb-4 max-xl:text-xl">
         {text}
       </h1>
       {children}

@@ -7,7 +7,7 @@ export default function Navigation({ active = false }: { active?: boolean }) {
 
   if (active) {
     return (
-      <ul className="w-screen h-screen bottom-0 bg-white flex flex-col justify-center items-center gap-3">
+      <ul className="flex flex-col items-center gap-3">
         <li className={fontSize}>
           <Link to="#">Home</Link>
         </li>
