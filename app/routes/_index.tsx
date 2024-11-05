@@ -1,8 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
-import Hero from "~/components/Hero";
-import Informasi from "~/components/Informasi";
-import Program from "~/components/Program";
-import SeputarMasjid from "~/components/SeputarMasjid";
+// import Hero from "~/components/Hero";
+// import Informasi from "~/components/Informasi";
+// import Program from "~/components/Program";
+// import SeputarMasjid from "~/components/SeputarMasjid";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,10 +14,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <Hero fotoImg="/foto.png" />
+      {/* <Hero fotoImg="/foto.png" />
       <SeputarMasjid />
       <Informasi />
-      <Program />
+      <Program /> */}
     </>
   );
 }

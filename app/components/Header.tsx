@@ -1,5 +1,6 @@
-import { Link } from "@remix-run/react";
 import { useState } from "react";
+import Navigation from "./HeaderComponents/Navigation";
+import Button from "./Button";
 
 type HeaderProps = {
   logoImg: string;
@@ -10,56 +11,26 @@ export default function Header({ logoImg, menuIcon }: HeaderProps) {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="flex bg-white w-screen h-[82px] justify-between items-center shadow-md shadow-slate-400 px-4 fixed z-50">
-      <img src={logoImg} alt="logo" className="w-36" />
-      <button
-        onClick={() => setActive(!active)}
-        className="w-6 cursor-pointer max-sm:block hidden"
-      >
-        <img src={menuIcon} alt="menuicon" />
-      </button>
+    <header
+      className={`bg-white w-screen shadow-md shadow-slate-400 fixed z-50`}
+    >
+      <div className="flex justify-between items-center px-5">
+        <img src={logoImg} alt="logo" className="w-48" />
+        <Button
+          onClick={() => setActive(!active)}
+          className="w-6 cursor-pointer max-sm:block hidden"
+        >
+          <img src={menuIcon} alt="menuicon" />
+        </Button>
 
-      <NavUl active={active} />
+        {!active && <Navigation />}
+      </div>
+
+      {active && (
+        <div className="absolute">
+          <Navigation active={active} />
+        </div>
+      )}
     </header>
   );
-}
-
-function NavUl({ active }: { active: boolean }) {
-  const fontSize =
-    "text-lg font-medium hover:underline decoration-[#357BA2] decoration-[3px] text-[#464648]";
-  if (active) {
-    return (
-      <ul className="flex flex-col absolute top-0 left-0 right-0 h-screen -z-10 bg-white justify-center items-center w-screen gap-3">
-        <li className={fontSize}>
-          <Link to="#">Home</Link>
-        </li>
-        <li className={fontSize}>
-          <Link to="#">About</Link>
-        </li>
-        <li className={fontSize}>
-          <Link to="#">Jadwal Kajian</Link>
-        </li>
-        <li className="px-8 py-3 text-xl border rounded-[60px] bg-[#357BA2] text-white font-bold w-fit">
-          <Link to="#">Donasi</Link>
-        </li>
-      </ul>
-    );
-  } else {
-    return (
-      <ul className="flex gap-9 items-center max-sm:hidden">
-        <li className={fontSize}>
-          <Link to="#">Home</Link>
-        </li>
-        <li className={fontSize}>
-          <Link to="#">About</Link>
-        </li>
-        <li className={fontSize}>
-          <Link to="#">Jadwal Kajian</Link>
-        </li>
-        <li className="px-8 py-3 text-xl rounded-[60px] bg-[#357BA2] text-white font-bold">
-          <Link to="#">Donasi</Link>
-        </li>
-      </ul>
-    );
-  }
 }
