@@ -11,7 +11,7 @@ export default function Header({ logoImg, menuIcon }: HeaderProps) {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="bg-white w-screen top-0 inset-x-0 shadow-md shadow-slate-400 fixed z-50">
+    <header className="bg-white w-full top-0 inset-x-0 shadow-md shadow-slate-400 fixed z-50">
       <div className="flex justify-between items-center px-5">
         <img src={logoImg} alt="logo" className="w-48" />
 

@@ -12,7 +12,7 @@ const imgIcon = {
 
 export default function Footer() {
   return (
-    <footer className="w-screen bg-[#323232]">
+    <footer className="w-full min-h-max bg-[#323232]">
       <div className="flex items-center justify-between px-10 py-5 gap-8 max-md:flex-col">
         {/* Logo Img */}
         <div className="w-1/4 max-lg:w-52">

@@ -6,8 +6,8 @@ type HeroProps = {
 
 export default function Hero({ fotoImg }: HeroProps) {
   return (
-    <section className="rounded-b-3xl bg-gradient-to-l from-[#247EB0] to-[#134561] w-screen max-h-min pb-6">
-      <div className="flex w-full h-full items-center pt-32 justify-between px-28 max-lg:flex-col max-lg:px-10 max-lg:pt-32">
+    <section className="w-full min-h-max rounded-b-3xl bg-gradient-to-l from-[#247EB0] to-[#134561] pb-6">
+      <div className="flex items-center pt-32 justify-between px-28 max-lg:flex-col max-lg:px-10 max-lg:pt-32">
         {/* Text Section */}
         <div className="w-1/2 max-lg:w-full max-lg:text-center">
           <h6 className="text-xl font-semibold text-white mb-4 max-lg:text-lg max-md:text-md">
