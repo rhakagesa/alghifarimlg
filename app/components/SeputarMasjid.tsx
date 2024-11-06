@@ -20,7 +20,8 @@ export default function SeputarMasjid() {
 
           <p className="text-2xl max-xl:text-xl max-lg:text-sm mb-5">
             <b>Masjid Abu Dzar Al - Ghifari</b> merupakan masjid yang berlokasi
-            di tengah pusat <b>Kota Malang</b>. Memiliki beberapa <b>program</b>
+            di tengah pusat <b>Kota Malang</b>. Memiliki beberapa{" "}
+            <b>program </b>
             diantaranya seperti <b>kajian rutin</b>, <b>buka puasa bersama</b>{" "}
             dan <b>banyak kegiatan</b> lainnya. Sehingga menjadikan masjid
             tempat untuk berkumpul <b>memperkokoh akidah</b> dan

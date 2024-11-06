@@ -23,12 +23,12 @@ const dummy: ProgramCardProps[] = [
 
 export default function Program() {
   return (
-    <section className="w-screen h-screen my-52 max-xl:my-5 max-lg:bg-[#21536F] max-lg:h-[1200px]">
-      <div className="relative flex justify-center items-center w-full h-full">
-        <h1 className="w-full text-5xl absolute z-[3] font-bold left-16 top-0 text-white max-xl:top-36 max-xl:left-0 max-xl:text-center max-lg:top-52">
+    <section className="w-full min-h-min">
+      <div className="relative flex flex-col justify-center items-center">
+        <h1 className="w-full text-5xl z-[3] font-bold left-16 top-0 text-white max-xl:top-36 max-xl:left-0 max-xl:text-center max-lg:top-52">
           PROGRAM MASJID
         </h1>
-        <div className="absolute flex z-[3] w-full max-lg:flex-col max-lg:items-center justify-around max-xl:mt-10">
+        <div className="flex z-[3] w-full max-lg:flex-col max-lg:items-center justify-around max-xl:mt-10">
           {dummy.map((item) => (
             <ProgramCard
               key={item.id}

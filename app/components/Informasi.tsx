@@ -33,21 +33,25 @@ const dummy: InfoCardProps[] = [
 
 export default function Informasi() {
   return (
-    <section className="w-screen h-fit mb-10">
-      <hr className="w-[88%] mx-auto m-0 bg-slate-100 mt-9" />
-      <h1 className="text-5xl text-[#21536F] font-bold w-full pl-24 my-14 max-xl:text-center max-xl:pl-0 max-md:text-2xl">
-        INFORMASI TERBARU
-      </h1>
-      <div className="grid grid-cols-2 gap-10 px-32 max-xl:flex max-xl:flex-col max-xl:items-center">
-        {dummy.map((item) => (
-          <InfoCard
-            key={item.id}
-            id={item.id}
-            img={item.img}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
+    <section className="w-full min-h-fit">
+      <div className="px-32 max-md:px-10">
+        <hr className="mx-auto m-0 bg-slate-200 p-[0.5px]" />
+        <div className="text-[#21536F] py-14 max-md:pt-0">
+          <h1 className="text-5xl font-bold w-full my-14 max-xl:text-center max-xl:pl-0 max-md:text-2xl">
+            INFORMASI TERBARU
+          </h1>
+          <div className="grid grid-cols-2 gap-5 max-xl:flex max-xl:flex-col max-xl:items-center">
+            {dummy.map((item) => (
+              <InfoCard
+                key={item.id}
+                id={item.id}
+                img={item.img}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
