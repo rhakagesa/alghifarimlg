@@ -13,12 +13,12 @@ export default function Header({ logoImg, menuIcon }: HeaderProps) {
   return (
     <header className="bg-white w-full top-0 inset-x-0 shadow-md shadow-slate-400 fixed z-50">
       <div className="flex justify-between items-center px-5">
-        <img src={logoImg} alt="logo" className="w-48" />
+        <img src={logoImg} alt="logo" className="w-48 max-md:w-32" />
 
         <div
           className={
             active
-              ? "bg-white absolute inset-0 h-screen mt-20 pt-60 transition duration-300 ease-in-out"
+              ? "bg-white absolute -top-6 inset-0 h-screen mt-20 pt-60 transition duration-300 ease-in-out"
               : ""
           }
         >
