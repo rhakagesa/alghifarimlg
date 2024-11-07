@@ -12,7 +12,7 @@ const imgIcon = {
 
 export default function Footer() {
   return (
-    <footer className="w-screen bg-[#323232]">
+    <footer className="w-full min-h-max bg-[#323232]">
       <div className="flex items-center justify-between px-10 py-5 gap-8 max-md:flex-col">
         {/* Logo Img */}
         <div className="w-1/4 max-lg:w-52">
@@ -22,28 +22,42 @@ export default function Footer() {
         <div className="w-3/4 gap-8 justify-between flex max-lg:w-full max-md:flex-col max-md:justify-center max-md:items-center">
           <div className="flex flex-col gap-4 w-2/6 max-lg:w-3/6 max-md:w-full">
             {/* Social */}
-            <TextLogoContainer text="Sosial Media">
-              <TextLogo imgIcon={imgIcon.igIcon} text="@alghifarimlg" />
+            <TextLogoContainer text="Sosial Media" type="footer">
+              <TextLogo
+                imgIcon={imgIcon.igIcon}
+                text="@alghifarimlg"
+                type="footer"
+              />
               <TextLogo
                 imgIcon={imgIcon.fbIcon}
                 text="Masjid Abu Dzar Al-Ghifari"
+                type="footer"
               />
-              <TextLogo imgIcon={imgIcon.ytIcon} text="Al-Ghifari Multimedia" />
+              <TextLogo
+                imgIcon={imgIcon.ytIcon}
+                text="Al-Ghifari Multimedia"
+                type="footer"
+              />
             </TextLogoContainer>
 
             {/* Contact */}
-            <TextLogoContainer text="Kontak">
-              <TextLogo imgIcon={imgIcon.waIcon} text="081313-555-182" />
+            <TextLogoContainer text="Kontak" type="footer">
+              <TextLogo
+                imgIcon={imgIcon.waIcon}
+                text="081313-555-182"
+                type="footer"
+              />
               <TextLogo
                 imgIcon={imgIcon.gmailIcon}
                 text="ldps.alghifari.malang@gmail.com"
+                type="footer"
               />
             </TextLogoContainer>
           </div>
 
           <div className="flex flex-col gap-4 w-4/6 max-xl:w-3/6 max-md:w-full">
             {/* Alamat */}
-            <TextLogoContainer text="Alamat">
+            <TextLogoContainer text="Alamat" type="footer">
               <p className="text-white text-lg font-medium max-xl:text-sm">
                 Perumahan Griya Shanta, Jl. Candi Jolotundo I Blk. E No.219A,
                 Mojolangu, Lowokwaru, Malang City, East Java 65142
