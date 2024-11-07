@@ -32,19 +32,22 @@ export default function Hero({ fotoImg }: HeroProps) {
           <img
             src={fotoImg}
             alt="foto"
-            className="w-1/2 max-xl:w-2/5 max-md:mt-5"
+            className="w-1/2 max-xl:w-2/5 max-md:w-full max-md:mt-5"
           />
         </div>
 
-        <div className="flex p-8 max-xl:p-6 max-md:p-2 rounded-[60px] border-2 bg-gradient-to-r from-slate-500 to-slate-400 items-center justify-between max-md:rounded-2xl ">
-          <div className="text-xl text-white group-hover:text-slate-900 font-bold max-xl:text-sm max-lg:text-center max-lg:leading-loose max-md:text-center max-md:leading-normal max-md:font-xs max-md:font-medium">
+        <div className="flex p-8 max-xl:p-6 max-md:p-2 rounded-[60px] border-2 bg-gradient-to-r from-slate-500 to-slate-400 items-center justify-between max-lg:rounded-2xl ">
+          <div className="text-xl text-white group-hover:text-slate-900 font-bold max-xl:text-sm max-lg:text-center max-md:text-center max-md:text-xs max-md:font-medium">
             <p>
               Mari investasi akhirat dengan cara donasi untuk program kegiatan
               masjid
-              <span className="ml-4 rounded-[60px] bg-[#357BA2] px-6 py-2 max-lg:px-4 max-lg:py-1 max-md:px-2 max-md:py-1 max-lg:ml-2 max-md:rounded-md ">
+              <span className="ml-4 rounded-[60px] bg-[#357BA2] px-6 py-2 max-lg:px-4 max-lg:py-1 max-lg:hidden">
                 Donasi
               </span>
             </p>
+            <span className="hidden max-lg:block rounded-[60px] bg-[#357BA2] max-lg:px-2 max-lg:mt-2 max-lg:py-1 max-lg:ml-2 max-lg:rounded-lg ">
+              Donasi
+            </span>
           </div>
         </div>
       </div>
