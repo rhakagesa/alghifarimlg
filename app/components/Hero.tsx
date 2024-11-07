@@ -15,7 +15,7 @@ export default function Hero({ fotoImg }: HeroProps) {
               SELAMAT DATANG DI WEBSITE
             </h6>
 
-            <div className="text-7xl font-bold text-white max-xl:text-5xl max-lg:text-3xl">
+            <div className="text-6xl font-bold text-white max-xl:text-5xl max-lg:text-3xl">
               <h1>MASJID ABU DZAR</h1>
               <h1>AL - GHIFARI</h1>
             </div>

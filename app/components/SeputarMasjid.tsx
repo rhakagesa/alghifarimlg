@@ -5,10 +5,10 @@ export default function SeputarMasjid() {
   return (
     <section className="w-full min-h-max bg-[url('/vector.svg')] bg-no-repeat bg-[length:578px_443px] bg-right-top max-md:h-min">
       {/* Content Section */}
-      <div className="flex justify-center items-center px-32 py-44 items-center max-md:flex-col max-md:text-center max-md:px-10 max-md:py-10 max-md:gap-10">
+      <div className="flex justify-center px-32 py-44 items-center max-md:flex-col max-md:text-center max-md:px-10 max-md:py-10 max-md:gap-10">
         {/* Img Section */}
         <div className="relative flex w-2/4 max-md:w-full justify-center">
-          <div className="absolute z-10 hover:-translate-y-20 hover:translate-x-20 max-lg:hover:-translate-y-10 max-lg:hover:translate-x-10 transition-all duration-300 ease-in-out bg-[url('/seputar-masjid-img.svg')] bg-cover w-[311px] h-[396px] max-xl:w-[211px] max-xl:h-[296px] max-xl:h-[296px] max-lg:w-[151px] max-lg:h-[246px] rounded-br-[80px] rounded-tl-[80px] max-lg:rounded-br-[40px] max-lg:rounded-tl-[40px] shadow-2xl shadow-black"></div>
+          <div className="absolute z-10 hover:-translate-y-20 hover:translate-x-20 max-lg:hover:-translate-y-10 max-lg:hover:translate-x-10 transition-all duration-300 ease-in-out bg-[url('/seputar-masjid-img.svg')] bg-cover w-[311px] h-[396px] max-xl:w-[211px] max-xl:h-[296px] max-lg:w-[151px] max-lg:h-[246px] rounded-br-[80px] rounded-tl-[80px] max-lg:rounded-br-[40px] max-lg:rounded-tl-[40px] shadow-2xl shadow-black"></div>
           <div className="bg-gradient-to-b from-[#247EB1] to-[#21536F] bg-cover w-[311px] h-[396px] max-xl:w-[211px] max-xl:h-[296px] max-lg:w-[151px] max-lg:h-[246px] rounded-br-[80px] rounded-tl-[80px] max-lg:rounded-br-[40px] max-lg:rounded-tl-[40px]"></div>
         </div>
 
