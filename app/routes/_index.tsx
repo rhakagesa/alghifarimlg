@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Bergabung from "~/components/Bergabung";
 import Hero from "~/components/Hero";
 import Informasi from "~/components/Informasi";
 import Program from "~/components/Program";
@@ -18,6 +19,7 @@ export default function Index() {
       <SeputarMasjid />
       <Informasi />
       <Program />
+      <Bergabung />
     </>
   );
 }

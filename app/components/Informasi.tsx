@@ -37,7 +37,7 @@ export default function Informasi() {
       <div className="px-32 max-md:px-10">
         <hr className="mx-auto m-0 bg-slate-200 p-[0.5px]" />
         <div className="text-[#21536F] py-14 max-md:pt-0">
-          <h1 className="text-5xl font-bold w-full my-14 max-xl:text-center max-xl:pl-0 max-md:text-2xl">
+          <h1 className="text-5xl font-bold w-full my-14 max-xl:text-center max-xl:pl-0 ">
             INFORMASI TERBARU
           </h1>
           <div className="grid grid-cols-2 gap-5 max-xl:flex max-xl:flex-col max-xl:items-center">
